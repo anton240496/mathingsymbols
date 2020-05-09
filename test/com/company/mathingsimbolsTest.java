@@ -10,29 +10,36 @@ class mathingsimbolsTest {
     void test() {
         mathingsimbols a = new mathingsimbols("accvvdv");
         System.out.println(a.getText());
+        assertNotEquals("accvvdv",a.getText());
+
     }
 
     @Test
     void test1() {
         mathingsimbols a = new mathingsimbols("aa89bbffc");
         System.out.println(a.getText());
+        assertNotEquals("aa89bbffc",a.getText());
     }
 
     @Test
     void test2() {
         mathingsimbols a = new mathingsimbols("aabbcc");
         System.out.println(a.getText());
+        assertNotEquals("aabbcc",a.getText());
     }
 
     @Test
     void test3() {
         mathingsimbols a = new mathingsimbols("AnnA?!");
         System.out.println(a.getText());
+        assertNotEquals("AnnA?!",a.getText());
     }
 
     @Test
     void test4() {
         mathingsimbols a = new mathingsimbols("AnnA?!12234aa34");
         System.out.println(a.getText());
+        assertNotEquals("AnnA?!12234aa34",a.getText());
+
     }
 }
